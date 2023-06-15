@@ -1,0 +1,64 @@
+<section id="trainers">
+  <div class="coaches bg-black-light d-flex py-5" style="min-height: 100vh">
+    <div class="container m-auto">
+      <div class="row p-3 text-center">
+        <h1 class="text-capitalize pb-2 text-center text-white text-capitalize">
+          our trainers
+        </h1>
+        <div class="border-yellow mx-auto"></div>
+        <p class="p-gray pt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo
+          reprehenderit minus perferendis eaque dolorum iusto nulla nihil
+          cupiditate
+        </p>
+      </div>
+      <div class="m-2">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let d of data">
+            <div class="profile-card-2">
+              <img src="{{ d?.img }}" class="img img-responsive" />
+              <div class="profile-name">{{ d?.name }}</div>
+              <div class="profile-username">{{ d?.activity }}</div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <ng-template carouselSlide>
+            <div class="profile-card-2">
+              <img src="/assets/img/coaches/2.jpg" class="img img-responsive" />
+              <div class="profile-name">JOHN DOE</div>
+              <div class="profile-username">@johndoesurname</div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="profile-card-2">
+              <img src="/assets/img/coaches/3.jpg" class="img img-responsive" />
+              <div class="profile-name">JOHN DOE</div>
+              <div class="profile-username">@johndoesurname</div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="profile-card-2">
+              <img src="/assets/img/coaches/4.jpg" class="img img-responsive" />
+              <div class="profile-name">JOHN DOE</div>
+              <div class="profile-username">@johndoesurname</div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="profile-card-2">
+              <img src="/assets/img/coaches/5.jpg" class="img img-responsive" />
+              <div class="profile-name">JOHN DOE</div>
+              <div class="profile-username">@johndoesurname</div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="profile-card-2">
+              <img src="/assets/img/coaches/6.jpg" class="img img-responsive" />
+              <div class="profile-name">JOHN DOE</div>
+              <div class="profile-username">@johndoesurname</div>
+            </div>
+          </ng-template> -->

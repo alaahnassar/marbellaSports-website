@@ -1,0 +1,34 @@
+@import '../../../assets/style/color-variables.scss';
+nav{
+  background-color: $black;
+  .navbar-brand {
+    color: $light-yellow;
+    font-size: 30px;
+    margin: 0 5px;
+    display: inline-block;
+  }
+  .navbar-toggler {
+    background-color: $yellow;
+  }
+  .navbar-toggler:focus {
+
+    box-shadow: none;
+  }
+  .nav-link.active{
+      color: $light-yellow;
+      &:hover{
+        color: white;
+      }
+  }
+  .nav-link{
+    color: white;
+    text-transform:capitalize;
+    margin: 0 10px;
+
+    &:hover{
+      color: $light-yellow;
+    }
+  }
+
+
+}

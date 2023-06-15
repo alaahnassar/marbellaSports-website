@@ -1,0 +1,46 @@
+@import "../../../assets/style/color-variables.scss";
+
+.input-group-text {
+  background-color: transparent;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.bg-input {
+  background-color: #e6e6e6;
+}
+
+.btn-yellow:hover {
+  background: $black;
+  color: white;
+}
+
+@keyframes mymove {
+  0% {
+    box-shadow: none;
+  }
+
+  50% {
+    box-shadow: 0px 0px 7px 1px rgba(253, 245, 56, 1);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px 1px rgba(253, 245, 56, 1);
+  }
+}
+
+.contact-form {
+  .form-control:focus
+   {
+    box-shadow: none;
+    border: none;
+    // color: transparent;
+  }
+
+  .input-group:focus-within,
+  textarea:focus {
+    animation: mymove 0.6s linear;
+  }
+}

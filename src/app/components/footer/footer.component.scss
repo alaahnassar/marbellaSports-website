@@ -1,0 +1,13 @@
+@import "../../../assets/style/color-variables.scss";
+
+.custom-bg {
+  background-color: $black;
+}
+
+i {
+  color: $yellow;
+}
+
+svg:hover {
+  fill: $yellow;
+}

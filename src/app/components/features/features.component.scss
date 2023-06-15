@@ -1,0 +1,18 @@
+@import "../../../assets/style/color-variables.scss";
+
+.feature {
+  min-height: 95vh;
+  height: 100%;
+
+  p {
+    color: $p-gray;
+    min-height: 20vh;
+  }
+
+  i {
+    color: $yellow;
+    font-size: 30px;
+
+  }
+
+}

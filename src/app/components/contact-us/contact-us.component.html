@@ -1,0 +1,104 @@
+<section id="contactUs" class="d-flex" style="height: min-90vh">
+  <div class="container py-5 m-auto">
+    <div class="row p-4 m-2">
+      <div class="text-center text-capitalize">
+        <h1>Contact Us</h1>
+        <div class="border-yellow mx-auto"></div>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between col-12">
+      <div class="col-12 col-md-6 p-2 mt-md-5 mb-md-5 mt-sm-2 mb-sm-1">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460073.68691992253!2d55.68807345095058!3d25.72674136385331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef676ad264b24c1%3A0x10f6affe1a9e78a3!2sRas%20Al-Khaimah%20-%20Ras%20al%20Khaimah%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1678576367560!5m2!1sen!2seg"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="text-center col-12 p-2 col-md-6 my-md-5 mt-2 mb-1 d-flex">
+        <form
+          [formGroup]="contactForm"
+          class="contact-form my-auto w-100"
+          (ngSubmit)="handleSubmit()"
+        >
+          <div class="mb-3">
+            <div
+              class="input-group flex-nowrap bg-input border-0 p-2 rounded-1"
+            >
+              <span class="input-group-text rounded-0 pe-0" id="addon-wrapping"
+                ><i class="fa fa-user" aria-hidden="true"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control bg-input border-0 border-start-0 rounded-0"
+                placeholder="Name"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+                formControlName="name"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div
+              class="input-group flex-nowrap bg-input border-0 p-2 rounded-1"
+            >
+              <span class="input-group-text rounded-0 pe-0" id="addon-wrapping"
+                ><i class="fa fa-phone" aria-hidden="true"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control bg-input border-0 border-start-0 rounded-0"
+                placeholder="Phone"
+                aria-describedby="addon-wrapping"
+                formControlName="phone"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <div
+              class="input-group flex-nowrap bg-input border-0 p-2 rounded-1"
+            >
+              <span class="input-group-text rounded-0 pe-0" id="addon-wrapping"
+                ><i class="fa-solid fa-cake-candles" aria-hidden="true"></i
+              ></span>
+              <input
+                type="date"
+                class="form-control bg-input border-0 border-start-0 rounded-0"
+                placeholder="BirthDate"
+                aria-describedby="addon-wrapping"
+                formControlName="date_of_birth"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <!-- <select
+              class="form-select bg-input py-2 px-4"
+              aria-label="Default select example"
+            >
+              <option selected>Select Activity</option>
+              <option value="1">Football</option>
+              <option value="2">Swimming</option>
+              <option value="3">VolleyBall</option>
+            </select> -->
+            <textarea
+              class="bg-input form-control"
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              style="width: 100%"
+              formControlName="note"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-yellow w-100 rounded-1">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

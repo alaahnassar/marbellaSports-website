@@ -1,0 +1,9 @@
+@import "../../../assets/style/color-variables.scss";
+
+.gallary {
+  height: 100vh;
+
+  img {
+    object-fit: cover;
+  }
+}

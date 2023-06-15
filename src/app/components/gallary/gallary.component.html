@@ -1,0 +1,58 @@
+<div class="py-5 bg-black-light gallary d-flex" id="gallary">
+  <!-- title -->
+  <div class="container m-auto">
+    <div class="row pb-5">
+      <h1 class="text-capitalize pb-2 pt-3 text-center text-white text-capitalize">
+        our gallery
+      </h1>
+      <div class="border-yellow mx-auto"></div>
+
+    </div>
+
+
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let d of data">
+        <div style="height: 350px;">
+          <!-- <img height="100%" src="../../../assets/images/img8.jpg" alt=""> -->
+          <img height="100%" src={{d?.img}} alt="">
+ 
+        
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+  </div>
+</div>
+
+
+
+      <!-- <ng-template carouselSlide>
+        <div style="height: 350px;">
+          <img height="100%" src="../../../assets/images/img9.jpg" alt="">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div style="height: 350px;">
+          <img height="100%" src="../../../assets/images/img10.jpg" alt="">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div style="height: 350px;">
+          <img height="100%" src="../../../assets/images/img11.jpg" alt="">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div style="height: 350px;">
+          <img height="100%" src="../../../assets/images/img12.jpg" alt="">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div style="height: 350px;">
+          <img height="100%" src="../../../assets/images/img11.jpg" alt="">
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div style="height: 350px;">
+          <img height="100%" src="../../../assets/images/img1.jpeg" alt="">
+        </div>
+      </ng-template> -->
